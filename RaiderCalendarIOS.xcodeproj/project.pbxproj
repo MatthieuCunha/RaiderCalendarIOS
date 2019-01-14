@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		239A4D2B017447449B0C8DF0 /* libPods-RaiderCalendarIOSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A259BA766D85403B011554A9 /* libPods-RaiderCalendarIOSUITests.a */; };
-		594C0DE1A9DAF3F139BF42B2 /* libPods-RaiderCalendarIOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BC6EE31E36E2A9BF3ADEB0 /* libPods-RaiderCalendarIOSTests.a */; };
-		7B3905B3CFAE451B4F7E41A6 /* libPods-RaiderCalendarIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2906729C49AF3B6EFCED6A /* libPods-RaiderCalendarIOS.a */; };
 		94FDB98121EBD3C100F4CDF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FDB98021EBD3C100F4CDF5 /* AppDelegate.swift */; };
 		94FDB98321EBD3C100F4CDF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FDB98221EBD3C100F4CDF5 /* ViewController.swift */; };
 		94FDB98621EBD3C100F4CDF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FDB98421EBD3C100F4CDF5 /* Main.storyboard */; };
@@ -37,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		226EFBB9A9C8F22833D46114 /* Pods-RaiderCalendarIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaiderCalendarIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaiderCalendarIOS/Pods-RaiderCalendarIOS.release.xcconfig"; sourceTree = "<group>"; };
 		94FDB97D21EBD3C000F4CDF5 /* RaiderCalendarIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiderCalendarIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FDB98021EBD3C100F4CDF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94FDB98221EBD3C100F4CDF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,14 +47,6 @@
 		94FDB99C21EBD3DD00F4CDF5 /* RaiderCalendarIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaiderCalendarIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FDB9A021EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaiderCalendarIOSUITests.swift; sourceTree = "<group>"; };
 		94FDB9A221EBD3DE00F4CDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0B8D97362CB06027492958D /* Pods-RaiderCalendarIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaiderCalendarIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaiderCalendarIOSUITests/Pods-RaiderCalendarIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A259BA766D85403B011554A9 /* libPods-RaiderCalendarIOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RaiderCalendarIOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3CEBF758AB2BBBD2FDF9EEC /* Pods-RaiderCalendarIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaiderCalendarIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaiderCalendarIOSTests/Pods-RaiderCalendarIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DA94FF9F8ADEF4D73B1579F1 /* Pods-RaiderCalendarIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaiderCalendarIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaiderCalendarIOSUITests/Pods-RaiderCalendarIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		DF2906729C49AF3B6EFCED6A /* libPods-RaiderCalendarIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RaiderCalendarIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E476F8412035CCCE3965575A /* Pods-RaiderCalendarIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaiderCalendarIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaiderCalendarIOS/Pods-RaiderCalendarIOS.debug.xcconfig"; sourceTree = "<group>"; };
-		E6BC6EE31E36E2A9BF3ADEB0 /* libPods-RaiderCalendarIOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RaiderCalendarIOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2A0534C82088ABA431BCC38 /* Pods-RaiderCalendarIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaiderCalendarIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaiderCalendarIOSTests/Pods-RaiderCalendarIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B3905B3CFAE451B4F7E41A6 /* libPods-RaiderCalendarIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				594C0DE1A9DAF3F139BF42B2 /* libPods-RaiderCalendarIOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,23 +68,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				239A4D2B017447449B0C8DF0 /* libPods-RaiderCalendarIOSUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F8BCFBE6737337DCF61F372 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DF2906729C49AF3B6EFCED6A /* libPods-RaiderCalendarIOS.a */,
-				E6BC6EE31E36E2A9BF3ADEB0 /* libPods-RaiderCalendarIOSTests.a */,
-				A259BA766D85403B011554A9 /* libPods-RaiderCalendarIOSUITests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		94FDB97421EBD3C000F4CDF5 = {
 			isa = PBXGroup;
 			children = (
@@ -106,8 +81,6 @@
 				94FDB99421EBD3DD00F4CDF5 /* RaiderCalendarIOSTests */,
 				94FDB99F21EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests */,
 				94FDB97E21EBD3C000F4CDF5 /* Products */,
-				F7E2F858DC80F5304FC26948 /* Pods */,
-				1F8BCFBE6737337DCF61F372 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,19 +125,6 @@
 			path = RaiderCalendarIOSUITests;
 			sourceTree = "<group>";
 		};
-		F7E2F858DC80F5304FC26948 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E476F8412035CCCE3965575A /* Pods-RaiderCalendarIOS.debug.xcconfig */,
-				226EFBB9A9C8F22833D46114 /* Pods-RaiderCalendarIOS.release.xcconfig */,
-				B3CEBF758AB2BBBD2FDF9EEC /* Pods-RaiderCalendarIOSTests.debug.xcconfig */,
-				F2A0534C82088ABA431BCC38 /* Pods-RaiderCalendarIOSTests.release.xcconfig */,
-				A0B8D97362CB06027492958D /* Pods-RaiderCalendarIOSUITests.debug.xcconfig */,
-				DA94FF9F8ADEF4D73B1579F1 /* Pods-RaiderCalendarIOSUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,7 +132,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94FDB9A521EBD3DE00F4CDF5 /* Build configuration list for PBXNativeTarget "RaiderCalendarIOS" */;
 			buildPhases = (
-				E951778C84F22D2C7F2FCD68 /* [CP] Check Pods Manifest.lock */,
 				94FDB97921EBD3C000F4CDF5 /* Sources */,
 				94FDB97A21EBD3C000F4CDF5 /* Frameworks */,
 				94FDB97B21EBD3C000F4CDF5 /* Resources */,
@@ -190,7 +149,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94FDB9A821EBD3DE00F4CDF5 /* Build configuration list for PBXNativeTarget "RaiderCalendarIOSTests" */;
 			buildPhases = (
-				9E19B531A8EE90E937A875ED /* [CP] Check Pods Manifest.lock */,
 				94FDB98D21EBD3DD00F4CDF5 /* Sources */,
 				94FDB98E21EBD3DD00F4CDF5 /* Frameworks */,
 				94FDB98F21EBD3DD00F4CDF5 /* Resources */,
@@ -209,7 +167,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94FDB9AB21EBD3DE00F4CDF5 /* Build configuration list for PBXNativeTarget "RaiderCalendarIOSUITests" */;
 			buildPhases = (
-				AE1B6AB7005A4782BE7A695C /* [CP] Check Pods Manifest.lock */,
 				94FDB99821EBD3DD00F4CDF5 /* Sources */,
 				94FDB99921EBD3DD00F4CDF5 /* Frameworks */,
 				94FDB99A21EBD3DD00F4CDF5 /* Resources */,
@@ -293,75 +250,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9E19B531A8EE90E937A875ED /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RaiderCalendarIOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE1B6AB7005A4782BE7A695C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RaiderCalendarIOSUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E951778C84F22D2C7F2FCD68 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RaiderCalendarIOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94FDB97921EBD3C000F4CDF5 /* Sources */ = {
@@ -542,7 +430,6 @@
 		};
 		94FDB9A621EBD3DE00F4CDF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E476F8412035CCCE3965575A /* Pods-RaiderCalendarIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,7 +447,6 @@
 		};
 		94FDB9A721EBD3DE00F4CDF5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 226EFBB9A9C8F22833D46114 /* Pods-RaiderCalendarIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -578,7 +464,6 @@
 		};
 		94FDB9A921EBD3DE00F4CDF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3CEBF758AB2BBBD2FDF9EEC /* Pods-RaiderCalendarIOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -599,7 +484,6 @@
 		};
 		94FDB9AA21EBD3DE00F4CDF5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2A0534C82088ABA431BCC38 /* Pods-RaiderCalendarIOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -620,7 +504,6 @@
 		};
 		94FDB9AC21EBD3DE00F4CDF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0B8D97362CB06027492958D /* Pods-RaiderCalendarIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -640,7 +523,6 @@
 		};
 		94FDB9AD21EBD3DE00F4CDF5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA94FF9F8ADEF4D73B1579F1 /* Pods-RaiderCalendarIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
