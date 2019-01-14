@@ -1,0 +1,1 @@
+../../../SharkORM/SharkORM/Private/SRKQuery+Private.h
