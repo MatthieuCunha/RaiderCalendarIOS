@@ -14,6 +14,13 @@
 		94FDB98B21EBD3DC00F4CDF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FDB98921EBD3DC00F4CDF5 /* LaunchScreen.storyboard */; };
 		94FDB99621EBD3DD00F4CDF5 /* RaiderCalendarIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FDB99521EBD3DD00F4CDF5 /* RaiderCalendarIOSTests.swift */; };
 		94FDB9A121EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FDB9A021EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests.swift */; };
+		B779704F21EC992900A8C5DF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B779704121EC991B00A8C5DF /* SQLite.framework */; };
+		B779705021EC993A00A8C5DF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B779704121EC991B00A8C5DF /* SQLite.framework */; };
+		B779705121EC993A00A8C5DF /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B779704121EC991B00A8C5DF /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B779705621EC99B600A8C5DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705521EC99B600A8C5DF /* User.swift */; };
+		B779705821EC9D4300A8C5DF /* Groupe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705721EC9D4300A8C5DF /* Groupe.swift */; };
+		B779705A21EC9EB500A8C5DF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705921EC9EB500A8C5DF /* Event.swift */; };
+		B779705C21EC9F8200A8C5DF /* EventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705B21EC9F8200A8C5DF /* EventStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,77 @@
 			remoteGlobalIDString = 94FDB97C21EBD3C000F4CDF5;
 			remoteInfo = RaiderCalendarIOS;
 		};
+		B779704021EC991B00A8C5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B779703621EC991900A8C5DF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		B779704221EC991B00A8C5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B779703621EC991900A8C5DF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		B779704421EC991B00A8C5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B779703621EC991900A8C5DF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		B779704621EC991B00A8C5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B779703621EC991900A8C5DF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		B779704821EC991B00A8C5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B779703621EC991900A8C5DF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		B779704A21EC991B00A8C5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B779703621EC991900A8C5DF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		B779704C21EC991B00A8C5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B779703621EC991900A8C5DF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		B779705221EC993A00A8C5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B779703621EC991900A8C5DF /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B779705421EC993A00A8C5DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B779705121EC993A00A8C5DF /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		94FDB97D21EBD3C000F4CDF5 /* RaiderCalendarIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiderCalendarIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +124,11 @@
 		94FDB99C21EBD3DD00F4CDF5 /* RaiderCalendarIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaiderCalendarIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FDB9A021EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaiderCalendarIOSUITests.swift; sourceTree = "<group>"; };
 		94FDB9A221EBD3DE00F4CDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B779703621EC991900A8C5DF /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Desktop/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		B779705521EC99B600A8C5DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B779705721EC9D4300A8C5DF /* Groupe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groupe.swift; sourceTree = "<group>"; };
+		B779705921EC9EB500A8C5DF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B779705B21EC9F8200A8C5DF /* EventStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +136,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B779705021EC993A00A8C5DF /* SQLite.framework in Frameworks */,
+				B779704F21EC992900A8C5DF /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +165,8 @@
 				94FDB99421EBD3DD00F4CDF5 /* RaiderCalendarIOSTests */,
 				94FDB99F21EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests */,
 				94FDB97E21EBD3C000F4CDF5 /* Products */,
+				B779703621EC991900A8C5DF /* SQLite.xcodeproj */,
+				B779704E21EC992900A8C5DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +189,10 @@
 				94FDB98721EBD3DC00F4CDF5 /* Assets.xcassets */,
 				94FDB98921EBD3DC00F4CDF5 /* LaunchScreen.storyboard */,
 				94FDB98C21EBD3DC00F4CDF5 /* Info.plist */,
+				B779705521EC99B600A8C5DF /* User.swift */,
+				B779705721EC9D4300A8C5DF /* Groupe.swift */,
+				B779705921EC9EB500A8C5DF /* Event.swift */,
+				B779705B21EC9F8200A8C5DF /* EventStatus.swift */,
 			);
 			path = RaiderCalendarIOS;
 			sourceTree = "<group>";
@@ -125,6 +215,27 @@
 			path = RaiderCalendarIOSUITests;
 			sourceTree = "<group>";
 		};
+		B779703721EC991900A8C5DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B779704121EC991B00A8C5DF /* SQLite.framework */,
+				B779704321EC991B00A8C5DF /* SQLiteTests iOS.xctest */,
+				B779704521EC991B00A8C5DF /* SQLite.framework */,
+				B779704721EC991B00A8C5DF /* SQLiteTests Mac.xctest */,
+				B779704921EC991B00A8C5DF /* SQLite.framework */,
+				B779704B21EC991B00A8C5DF /* SQLiteTests tvOS.xctest */,
+				B779704D21EC991B00A8C5DF /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B779704E21EC992900A8C5DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +246,12 @@
 				94FDB97921EBD3C000F4CDF5 /* Sources */,
 				94FDB97A21EBD3C000F4CDF5 /* Frameworks */,
 				94FDB97B21EBD3C000F4CDF5 /* Resources */,
+				B779705421EC993A00A8C5DF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B779705321EC993A00A8C5DF /* PBXTargetDependency */,
 			);
 			name = RaiderCalendarIOS;
 			productName = RaiderCalendarIOS;
@@ -215,6 +328,12 @@
 			mainGroup = 94FDB97421EBD3C000F4CDF5;
 			productRefGroup = 94FDB97E21EBD3C000F4CDF5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B779703721EC991900A8C5DF /* Products */;
+					ProjectRef = B779703621EC991900A8C5DF /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				94FDB97C21EBD3C000F4CDF5 /* RaiderCalendarIOS */,
@@ -223,6 +342,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B779704121EC991B00A8C5DF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = B779704021EC991B00A8C5DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B779704321EC991B00A8C5DF /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = B779704221EC991B00A8C5DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B779704521EC991B00A8C5DF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = B779704421EC991B00A8C5DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B779704721EC991B00A8C5DF /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = B779704621EC991B00A8C5DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B779704921EC991B00A8C5DF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = B779704821EC991B00A8C5DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B779704B21EC991B00A8C5DF /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = B779704A21EC991B00A8C5DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B779704D21EC991B00A8C5DF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = B779704C21EC991B00A8C5DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		94FDB97B21EBD3C000F4CDF5 /* Resources */ = {
@@ -257,7 +428,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				94FDB98321EBD3C100F4CDF5 /* ViewController.swift in Sources */,
+				B779705821EC9D4300A8C5DF /* Groupe.swift in Sources */,
+				B779705C21EC9F8200A8C5DF /* EventStatus.swift in Sources */,
 				94FDB98121EBD3C100F4CDF5 /* AppDelegate.swift in Sources */,
+				B779705621EC99B600A8C5DF /* User.swift in Sources */,
+				B779705A21EC9EB500A8C5DF /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +464,11 @@
 			isa = PBXTargetDependency;
 			target = 94FDB97C21EBD3C000F4CDF5 /* RaiderCalendarIOS */;
 			targetProxy = 94FDB99D21EBD3DD00F4CDF5 /* PBXContainerItemProxy */;
+		};
+		B779705321EC993A00A8C5DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = B779705221EC993A00A8C5DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,9 +611,11 @@
 		94FDB9A621EBD3DE00F4CDF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RaiderCalendarIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,9 +630,11 @@
 		94FDB9A721EBD3DE00F4CDF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RaiderCalendarIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
