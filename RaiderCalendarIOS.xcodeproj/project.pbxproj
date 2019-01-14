@@ -21,6 +21,14 @@
 		B779705821EC9D4300A8C5DF /* Groupe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705721EC9D4300A8C5DF /* Groupe.swift */; };
 		B779705A21EC9EB500A8C5DF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705921EC9EB500A8C5DF /* Event.swift */; };
 		B779705C21EC9F8200A8C5DF /* EventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705B21EC9F8200A8C5DF /* EventStatus.swift */; };
+		B779705E21ECB06D00A8C5DF /* ManageGroupeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705D21ECB06D00A8C5DF /* ManageGroupeViewController.swift */; };
+		B779706021ECB13E00A8C5DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705F21ECB13E00A8C5DF /* LoginViewController.swift */; };
+		B779706221ECB1CF00A8C5DF /* createEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779706121ECB1CF00A8C5DF /* createEventViewController.swift */; };
+		B779706421ECB24E00A8C5DF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779706321ECB24E00A8C5DF /* CalendarViewController.swift */; };
+		B779706621ECBBC100A8C5DF /* setUpDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779706521ECBBC100A8C5DF /* setUpDataBase.swift */; };
+		B779707621ECC11100A8C5DF /* GroupeMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779707521ECC11100A8C5DF /* GroupeMembers.swift */; };
+		B779707821ECCC5300A8C5DF /* tokenHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779707721ECCC5300A8C5DF /* tokenHolder.swift */; };
+		B779707A21ECEAD900A8C5DF /* GroupeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779707921ECEAD900A8C5DF /* GroupeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +137,14 @@
 		B779705721EC9D4300A8C5DF /* Groupe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groupe.swift; sourceTree = "<group>"; };
 		B779705921EC9EB500A8C5DF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B779705B21EC9F8200A8C5DF /* EventStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStatus.swift; sourceTree = "<group>"; };
+		B779705D21ECB06D00A8C5DF /* ManageGroupeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageGroupeViewController.swift; sourceTree = "<group>"; };
+		B779705F21ECB13E00A8C5DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B779706121ECB1CF00A8C5DF /* createEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createEventViewController.swift; sourceTree = "<group>"; };
+		B779706321ECB24E00A8C5DF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		B779706521ECBBC100A8C5DF /* setUpDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setUpDataBase.swift; sourceTree = "<group>"; };
+		B779707521ECC11100A8C5DF /* GroupeMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupeMembers.swift; sourceTree = "<group>"; };
+		B779707721ECCC5300A8C5DF /* tokenHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tokenHolder.swift; sourceTree = "<group>"; };
+		B779707921ECEAD900A8C5DF /* GroupeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +209,14 @@
 				B779705721EC9D4300A8C5DF /* Groupe.swift */,
 				B779705921EC9EB500A8C5DF /* Event.swift */,
 				B779705B21EC9F8200A8C5DF /* EventStatus.swift */,
+				B779705D21ECB06D00A8C5DF /* ManageGroupeViewController.swift */,
+				B779705F21ECB13E00A8C5DF /* LoginViewController.swift */,
+				B779706121ECB1CF00A8C5DF /* createEventViewController.swift */,
+				B779706321ECB24E00A8C5DF /* CalendarViewController.swift */,
+				B779706521ECBBC100A8C5DF /* setUpDataBase.swift */,
+				B779707521ECC11100A8C5DF /* GroupeMembers.swift */,
+				B779707721ECCC5300A8C5DF /* tokenHolder.swift */,
+				B779707921ECEAD900A8C5DF /* GroupeTableViewController.swift */,
 			);
 			path = RaiderCalendarIOS;
 			sourceTree = "<group>";
@@ -427,12 +451,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B779706421ECB24E00A8C5DF /* CalendarViewController.swift in Sources */,
+				B779705E21ECB06D00A8C5DF /* ManageGroupeViewController.swift in Sources */,
 				94FDB98321EBD3C100F4CDF5 /* ViewController.swift in Sources */,
 				B779705821EC9D4300A8C5DF /* Groupe.swift in Sources */,
 				B779705C21EC9F8200A8C5DF /* EventStatus.swift in Sources */,
+				B779707821ECCC5300A8C5DF /* tokenHolder.swift in Sources */,
+				B779706021ECB13E00A8C5DF /* LoginViewController.swift in Sources */,
+				B779706221ECB1CF00A8C5DF /* createEventViewController.swift in Sources */,
 				94FDB98121EBD3C100F4CDF5 /* AppDelegate.swift in Sources */,
+				B779707A21ECEAD900A8C5DF /* GroupeTableViewController.swift in Sources */,
+				B779706621ECBBC100A8C5DF /* setUpDataBase.swift in Sources */,
 				B779705621EC99B600A8C5DF /* User.swift in Sources */,
 				B779705A21EC9EB500A8C5DF /* Event.swift in Sources */,
+				B779707621ECC11100A8C5DF /* GroupeMembers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

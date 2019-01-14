@@ -36,4 +36,17 @@ class Event{
         self.date=date;
     }
     
+    // save the object in database
+    func save(){
+        
+        
+    }
+    
+    // load this object from databse
+    func loadByParameter(paramName : String, paramValue : String,paramName2 : String, paramValue2 : String){
+        
+        
+    }
+    
+    
 }

@@ -7,19 +7,27 @@
 //
 
 import Foundation
-
+import SQLite
 
 class Groupe{
     
-    var name: String = "";
-    var jointoken: String = "";
+    var name: String = ""
+    var jointoken: String = ""
+    var id: Int64=0
+    
+    let groupeTable = Table("Groupe")
+    let nameFormat = Expression<String>("name")
+    let jointokenFormat = Expression<String>("jointoken")
     
     init(name : String){
-        self.name=name;
-        self.jointoken=self.randomString(length: 8);
+        self.name=name
+        self.jointoken=self.randomString(length: 8)
     }
 
-    
+    init(name : String,token : String){
+        self.name=name
+        self.jointoken=token;
+    }
     
     
     func randomString(length: Int) -> String {
@@ -39,19 +47,50 @@ class Groupe{
     }
     
     func getName() -> String{
-        return self.name;
+        return self.name
     }
     
     func setName(name:String){
-        self.name=name;
+        self.name=name
     }
     
     func getToken() -> String{
-        return self.jointoken;
+        return self.jointoken
     }
     
     func setToken(token:String){
-        self.jointoken=token;
+        self.jointoken=token
+    }
+    
+    func getId() -> Int64{
+        return self.id
+    }
+    
+    func setId(id:Int64){
+        self.id=id
+    }
+    
+    // save the object in database
+    func saveNew(){
+        let path = NSSearchPathForDirectoriesInDomains(
+            .documentDirectory, .userDomainMask, true
+            ).first!
+        
+        do{
+            let db = try Connection("\(path)/db.sqlite3")
+            try db.run(groupeTable.insert(nameFormat <- name, jointokenFormat <- jointoken))
+            self.id=db.lastInsertRowid
+        } catch {
+            //handle error
+            print(error)
+        }
+        
+    }
+    
+    // load this object from databse
+    func loadByParameter(paramName : String, paramValue : String,paramName2 : String, paramValue2 : String){
+        
+        
     }
     
 }
