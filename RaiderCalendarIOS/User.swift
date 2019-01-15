@@ -116,16 +116,15 @@ class User{
             let db = try Connection("\(path)/db.sqlite3")
             
             let query = groupeMembers.select(groupeMembers[*]).filter(idPlayerFormat == user1.getId())
-            let groupeMember1 = try db.pluck(query)
             
-            
-            let query2 = groupe.select(groupe[*]).filter(idFormat == groupeMember1![idGroupeFormat])
-            
-            
-            for groupeItem in try db.prepare(query2) {
-                let groupe1 = Groupe(name : groupeItem[nameFormat],token :groupeItem[jointokenFormat])
-                groupList.append(groupe1)
+            for groupeMemberItem in try db.prepare(query) {
+              let query2 = groupe.select(groupe[*]).filter(idFormat == groupeMemberItem[idGroupeFormat])
+              for groupeItem in try db.prepare(query2) {
+                    let groupe1 = Groupe(name : groupeItem[nameFormat],token :groupeItem[jointokenFormat])
+                    groupList.append(groupe1)
+              }
             }
+            
             
         }catch{print(error)}
         
