@@ -8,11 +8,16 @@
 
 import UIKit
 
+var groupList = [Groupe]()
+
 class GroupeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let user1 = User()
+         groupList = user1.getGroupeList(userToken: Token.token)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,12 +34,20 @@ class GroupeTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return groupList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customcell", for: indexPath) as! UITableViewCell
+        let text = groupList[indexPath.item].getName() + " " + groupList[indexPath.item].getToken()
+        cell.textLabel?.text = text
+        return cell
+        
     }
 
     /*

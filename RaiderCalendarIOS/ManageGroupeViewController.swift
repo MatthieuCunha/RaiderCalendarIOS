@@ -7,14 +7,14 @@
 //
 
 import UIKit
-import SQLite
+import Foundation
 
 class ManageGroupeViewController: UIViewController {
 
     
     @IBOutlet weak var groupeName: UITextField!
     @IBOutlet weak var groupeToken: UITextField!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var containerView: UIView!
     
     
     override func viewDidLoad() {
@@ -27,10 +27,6 @@ class ManageGroupeViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-            super.viewDidAppear(animated)
-            tableView.reloadData()
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

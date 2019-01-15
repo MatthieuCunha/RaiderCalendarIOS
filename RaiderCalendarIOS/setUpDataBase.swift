@@ -92,12 +92,17 @@ func setUpDB() -> Void{
         let user1 = User(name:"user1",token:"tmpToken")
         user1.saveNew()
         
+        //group setup
         let groupe1 = Groupe(name:"groupe1")
         groupe1.saveNew()
+        let groupe2 = Groupe(name:"groupe2")
+        groupe2.saveNew()
         
-        
+        // groupMember setup
         let groupeMember1=GroupeMember(idGroupe:groupe1.getId(),idPlayer:user1.getId())
         groupeMember1.saveNew()
+        let groupeMember2=GroupeMember(idGroupe:groupe2.getId(),idPlayer:user1.getId())
+        groupeMember2.saveNew()
         
     
 } catch {
