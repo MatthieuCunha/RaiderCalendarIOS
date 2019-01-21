@@ -21,6 +21,8 @@ class GroupeMember{
     let idPlayerFormat = Expression<Int64>("idPlayer")
     
     
+    init(){}
+    
     init(idGroupe : Int64,idPlayer: Int64){
         self.idGroupe=idGroupe;
         self.idPlayer=idPlayer;
@@ -58,6 +60,29 @@ class GroupeMember{
             //handle error
             print(error)
         }
+    }
+    
+    func getMembersId(groupId: Int64) -> [Int64]{
+        var memberListId: [Int64] = [Int64]()
+        do{
+            let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+            let db = try Connection("\(path)/db.sqlite3")
+            
+            let query = groupeMembersTable.select(idPlayerFormat)
+                .filter(idGroupeFormat == groupId)
+            
+            for groupeMemberItem in try db.prepare(query) {
+                memberListId.append(groupeMemberItem[idPlayerFormat])
+            }
+
+            return memberListId
+        } catch {
+            //handle error
+            print(error)
+            return [0]
+        }
+        
+        
     }
         
         

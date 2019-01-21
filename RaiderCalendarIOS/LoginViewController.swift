@@ -29,6 +29,11 @@ class LoginViewController: UIViewController {
     }
   
     @IBAction func loginButtonClick(_ sender: Any) {
+        var loginValue = login.text
+        var passwordValue = password.text
+        
+        
+        
     }
     
     /*

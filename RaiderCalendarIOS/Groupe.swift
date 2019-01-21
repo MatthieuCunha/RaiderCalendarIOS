@@ -15,6 +15,7 @@ class Groupe{
     var jointoken: String = ""
     var id: Int64=0
     
+    let idFormat = Expression<Int64>("id")
     let groupeTable = Table("Groupe")
     let nameFormat = Expression<String>("name")
     let jointokenFormat = Expression<String>("jointoken")
@@ -85,6 +86,38 @@ class Groupe{
             print(error)
         }
         
+    }
+    
+    func getByToken(token : String) ->Bool{
+        
+        do{
+            let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+            let db = try Connection("\(path)/db.sqlite3")
+            
+            let query = groupeTable.select(groupeTable[*])
+                .filter(jointokenFormat == token)
+            let groupe = try db.pluck(query)
+            
+            if(groupe == nil){
+                return false
+            }
+            
+            self.id=groupe![idFormat]
+            self.name=groupe![nameFormat]
+            self.jointoken=groupe![jointokenFormat]
+            
+            return true
+        } catch {
+            //handle error
+            print(error)
+            return false
+        }
+        
+    }
+    
+    func addMember(playerId : Int64){
+        let groupeMember=GroupeMember(idGroupe: self.id,idPlayer: playerId)
+        groupeMember.saveNew()
     }
     
     // load this object from databse

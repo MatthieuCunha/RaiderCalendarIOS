@@ -11,7 +11,8 @@ import UIKit
 var groupList = [Groupe]()
 
 class GroupeTableViewController: UITableViewController {
-
+    
+    @IBOutlet var groupeTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,12 +45,22 @@ class GroupeTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customcell", for: indexPath) as! UITableViewCell
-        let text = groupList[indexPath.item].getName() + " " + groupList[indexPath.item].getToken()
+        cell.textLabel?.numberOfLines = 0
+        let text = groupList[indexPath.item].getName() + "\n" + groupList[indexPath.item].getToken()
         cell.textLabel?.text = text
         return cell
         
     }
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let user1 = User()
+        groupList = user1.getGroupeList(userToken: Token.token)
+        
+        super.viewWillAppear(animated)
+        self.tableView.reloadData()
+    }
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

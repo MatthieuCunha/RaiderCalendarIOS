@@ -15,6 +15,8 @@ class User{
     var name: String = ""
     var token: String = ""
     var id: Int64=0
+    
+    var tmpPass: String=""
 
     let idFormat = Expression<Int64>("id")
     let nameFormat = Expression<String>("name")
@@ -31,9 +33,11 @@ class User{
     
     }
     
-    init(name : String,token: String){
+    init(name : String,token: String, password: String){
         self.name=name
         self.token=token
+        self.tmpPass=password
+        
     }
     
     
@@ -70,9 +74,11 @@ class User{
             let db = try Connection("\(path)/db.sqlite3")
             
             
-            
             try db.run(users.insert(nameFormat <- name, tokenFormat <- token))
             self.id=db.lastInsertRowid
+            
+            loginInfo(playerId: self.id,password: self.tmpPass)
+            
         } catch {
     //handle error
     print(error)

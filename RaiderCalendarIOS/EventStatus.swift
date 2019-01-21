@@ -7,16 +7,27 @@
 //
 
 import Foundation
+import SQLite
 
 
 class EventStatus{
     
-    var eventId:String;
-    var playerId:String;
-    var status:String;
-    var role:String;
+    var eventId:Int64=0;
+    var playerId:Int64=0;
+    var status:String="";
+    var role:String="";
     
-    init(eventId:String,playerId:String,role:String){
+    
+    let eventStatusTable = Table("EventStatus")
+    let id = Expression<Int64>("id")
+    let statusFormat = Expression<String>("Status")
+    let idEventFormat = Expression<Int64>("idEvent")
+    let idPlayerFormat = Expression<Int64>("idPlayer")
+    
+    
+    init(){}
+    
+    init(eventId:Int64,playerId:Int64,role:String){
         self.eventId=eventId;
         self.playerId=playerId;
         self.status="PENDING";
@@ -26,19 +37,19 @@ class EventStatus{
     }
     
     
-    func getEventId() -> String{
+    func getEventId() -> Int64{
         return self.eventId;
     }
     
-    func setEventId(eventId:String){
+    func setEventId(eventId:Int64){
         self.eventId=eventId;
     }
     
-    func getPlayerId() -> String{
+    func getPlayerId() -> Int64{
         return self.playerId;
     }
     
-    func setPlayerId(playerId:String){
+    func setPlayerId(playerId:Int64){
         self.playerId=playerId;
     }
     
@@ -58,9 +69,29 @@ class EventStatus{
         self.role=role;
     }
     
-    // save the object in database
-    func save(){
+    
+    func inviteGroupe(eventId : Int64, groupeId: Int64){
         
+        let playerList = GroupeMember().getMembersId(groupId: groupeId)
+        for playerid in playerList{
+            eventStatus = EventStatus(eventId: eventId,playerId: playerid)
+            eventStatus.saveNew()
+        }
+        
+    }
+    
+    // save the object in database
+    func saveNew(){
+        do{
+            let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+            let db = try Connection("\(path)/db.sqlite3")
+            try db.run(eventStatusTable.insert(statusFormat <- status, idPlayerFormat <- playerId, idEventFormat <- eventId))
+            
+            //self.id=db.lastInsertRowid
+        } catch {
+            //handle error
+            print(error)
+        }
         
     }
     

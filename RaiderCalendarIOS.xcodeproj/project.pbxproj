@@ -14,6 +14,7 @@
 		94FDB98B21EBD3DC00F4CDF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FDB98921EBD3DC00F4CDF5 /* LaunchScreen.storyboard */; };
 		94FDB99621EBD3DD00F4CDF5 /* RaiderCalendarIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FDB99521EBD3DD00F4CDF5 /* RaiderCalendarIOSTests.swift */; };
 		94FDB9A121EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FDB9A021EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests.swift */; };
+		B775D3B221F5F1BF004D4120 /* loginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B775D3B121F5F1BF004D4120 /* loginInfo.swift */; };
 		B779705621EC99B600A8C5DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705521EC99B600A8C5DF /* User.swift */; };
 		B779705821EC9D4300A8C5DF /* Groupe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705721EC9D4300A8C5DF /* Groupe.swift */; };
 		B779705A21EC9EB500A8C5DF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705921EC9EB500A8C5DF /* Event.swift */; };
@@ -132,6 +133,7 @@
 		94FDB99C21EBD3DD00F4CDF5 /* RaiderCalendarIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaiderCalendarIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FDB9A021EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaiderCalendarIOSUITests.swift; sourceTree = "<group>"; };
 		94FDB9A221EBD3DE00F4CDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B775D3B121F5F1BF004D4120 /* loginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginInfo.swift; sourceTree = "<group>"; };
 		B779705521EC99B600A8C5DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B779705721EC9D4300A8C5DF /* Groupe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groupe.swift; sourceTree = "<group>"; };
 		B779705921EC9EB500A8C5DF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				B779707521ECC11100A8C5DF /* GroupeMembers.swift */,
 				B779707721ECCC5300A8C5DF /* tokenHolder.swift */,
 				B779707921ECEAD900A8C5DF /* GroupeTableViewController.swift */,
+				B775D3B121F5F1BF004D4120 /* loginInfo.swift */,
 			);
 			path = RaiderCalendarIOS;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				B779706621ECBBC100A8C5DF /* setUpDataBase.swift in Sources */,
 				B779705621EC99B600A8C5DF /* User.swift in Sources */,
 				B779705A21EC9EB500A8C5DF /* Event.swift in Sources */,
+				B775D3B221F5F1BF004D4120 /* loginInfo.swift in Sources */,
 				B779707621ECC11100A8C5DF /* GroupeMembers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
