@@ -15,6 +15,7 @@
 		94FDB99621EBD3DD00F4CDF5 /* RaiderCalendarIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FDB99521EBD3DD00F4CDF5 /* RaiderCalendarIOSTests.swift */; };
 		94FDB9A121EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FDB9A021EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests.swift */; };
 		B775D3B221F5F1BF004D4120 /* loginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B775D3B121F5F1BF004D4120 /* loginInfo.swift */; };
+		B775D3BE21F62DF6004D4120 /* eventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B775D3BD21F62DF6004D4120 /* eventDetail.swift */; };
 		B779705621EC99B600A8C5DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705521EC99B600A8C5DF /* User.swift */; };
 		B779705821EC9D4300A8C5DF /* Groupe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705721EC9D4300A8C5DF /* Groupe.swift */; };
 		B779705A21EC9EB500A8C5DF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779705921EC9EB500A8C5DF /* Event.swift */; };
@@ -134,6 +135,7 @@
 		94FDB9A021EBD3DE00F4CDF5 /* RaiderCalendarIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaiderCalendarIOSUITests.swift; sourceTree = "<group>"; };
 		94FDB9A221EBD3DE00F4CDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B775D3B121F5F1BF004D4120 /* loginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginInfo.swift; sourceTree = "<group>"; };
+		B775D3BD21F62DF6004D4120 /* eventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventDetail.swift; sourceTree = "<group>"; };
 		B779705521EC99B600A8C5DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B779705721EC9D4300A8C5DF /* Groupe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groupe.swift; sourceTree = "<group>"; };
 		B779705921EC9EB500A8C5DF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				B779707721ECCC5300A8C5DF /* tokenHolder.swift */,
 				B779707921ECEAD900A8C5DF /* GroupeTableViewController.swift */,
 				B775D3B121F5F1BF004D4120 /* loginInfo.swift */,
+				B775D3BD21F62DF6004D4120 /* eventDetail.swift */,
 			);
 			path = RaiderCalendarIOS;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B779706421ECB24E00A8C5DF /* CalendarViewController.swift in Sources */,
+				B775D3BE21F62DF6004D4120 /* eventDetail.swift in Sources */,
 				B779705E21ECB06D00A8C5DF /* ManageGroupeViewController.swift in Sources */,
 				94FDB98321EBD3C100F4CDF5 /* ViewController.swift in Sources */,
 				B779705821EC9D4300A8C5DF /* Groupe.swift in Sources */,

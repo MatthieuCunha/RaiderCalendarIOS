@@ -11,8 +11,8 @@ import SQLite
 
 class Event{
     
-    var name : String;
-    var date : Date;
+    var name : String="";
+    var date : Date=Date();
     var id: Int64=0
     
      let eventTable = Table("Event")
@@ -26,6 +26,7 @@ class Event{
     let idPlayerFormat = Expression<Int64>("idPlayer")
     
     
+    init(){}
     
     init(name : String, date: Date){
         self.name=name;
@@ -48,16 +49,16 @@ class Event{
         self.name=name;
     }
     
-    func getToken() -> Date{
+    func getDate() -> Date{
         return self.date;
     }
     
-    func setToken(date:Date){
+    func setDate(date:Date){
         self.date=date;
     }
     
     // save the object in database
-    func save(){
+    func saveNew(){
         do{
             let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
             let db = try Connection("\(path)/db.sqlite3")

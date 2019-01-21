@@ -68,8 +68,7 @@ class GroupeMember{
             let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
             let db = try Connection("\(path)/db.sqlite3")
             
-            let query = groupeMembersTable.select(idPlayerFormat)
-                .filter(idGroupeFormat == groupId)
+            let query = groupeMembersTable.select(groupeMembersTable[*])//.filter(idGroupeFormat == groupId)
             
             for groupeMemberItem in try db.prepare(query) {
                 memberListId.append(groupeMemberItem[idPlayerFormat])

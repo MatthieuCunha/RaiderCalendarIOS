@@ -78,7 +78,7 @@ class createEventViewController: UIViewController, UIPickerViewDataSource, UIPic
     
     @IBAction func onClickCreate(_ sender: UIButton) {
         let event = Event(name: eventName.text!,date: datePicker.date)
-        event.save()
+        event.saveNew()
         let groupe = groupList[selectedGroupe]
         let eventStatus = EventStatus()
         eventStatus.inviteGroupe(eventId: event.getId(),groupeId: groupe.getId())

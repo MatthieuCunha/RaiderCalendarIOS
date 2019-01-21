@@ -136,6 +136,29 @@ func setUpDB() -> Void{
         groupeMember5.saveNew()
         let groupeMember6=GroupeMember(idGroupe:groupe1.getId(),idPlayer:user5.getId())
         groupeMember6.saveNew()
+        
+        
+        // eventSetUp
+        let event1=Event(name: "event1", date: Date())
+        event1.saveNew()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        let someDateTime = formatter.date(from: "2019/01/22 14:00")
+        let event2=Event(name: "event2", date: someDateTime!)
+        event2.saveNew()
+        
+        
+        //eventStatus setUp
+        let eventStatus1=EventStatus(eventId: event1.getId(),playerId: user1.getId(),role: "")
+        eventStatus1.saveNew()
+        let eventStatus2=EventStatus(eventId: event1.getId(),playerId: user2.getId(),role: "")
+        eventStatus2.saveNew()
+        let eventStatus3=EventStatus(eventId: event2.getId(),playerId: user1.getId(),role: "")
+        eventStatus3.saveNew()
+        let eventStatus4=EventStatus(eventId: event2.getId(),playerId: user3.getId(),role: "")
+        eventStatus4.saveNew()
+        
+        
     
 } catch {
     //handle error

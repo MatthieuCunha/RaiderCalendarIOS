@@ -8,26 +8,48 @@
 
 import UIKit
 
-class CalendarViewController: UIViewController {
+class CalendarViewController: UITableViewController {
 
+    @IBOutlet var eventTableView: UITableView!
+    var eventList = [Event]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
-        
+          self.eventList = Event().getEventForPlayer(playerToken: Token.token)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // load code
-        
+        self.eventList = Event().getEventForPlayer(playerToken: Token.token)
+         self.eventTableView.reloadData()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return eventList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let formatter = DateFormatter()
+        // initially set the format based on your datepicker date / server String
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! UITableViewCell
+        cell.textLabel?.numberOfLines = 0
+        let text = eventList[indexPath.item].getName() + "\n" + formatter.string(from:eventList[indexPath.item].getDate())
+        cell.textLabel?.text = text
+        return cell
+        
+    }
+    
     
 
     /*
