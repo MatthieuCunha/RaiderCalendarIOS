@@ -74,7 +74,7 @@ class EventStatus{
         
         let playerList = GroupeMember().getMembersId(groupId: groupeId)
         for playerid in playerList{
-            eventStatus = EventStatus(eventId: eventId,playerId: playerid)
+            let eventStatus = EventStatus(eventId: eventId,playerId: playerid, role:"")
             eventStatus.saveNew()
         }
         

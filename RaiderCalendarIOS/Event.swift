@@ -20,6 +20,11 @@ class Event{
      let nameFormat = Expression<String>("name")
      let dateFormat = Expression<Date>("date")
     
+    let eventStatusTable = Table("EventStatus")
+    let statusFormat = Expression<String>("Status")
+    let idEventFormat = Expression<Int64>("idEvent")
+    let idPlayerFormat = Expression<Int64>("idPlayer")
+    
     
     
     init(name : String, date: Date){
@@ -71,5 +76,33 @@ class Event{
         
     }
     
+    func getEventForPlayer(playerToken: String) -> Array<Event>{
+        
+        let user1 = User()
+        user1.loadByToken(token: playerToken)
+        
+        var eventList = [Event]()
+        do{
+            let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+            let db = try Connection("\(path)/db.sqlite3")
+            
+            let query = eventStatusTable.select(eventStatusTable[*]).filter(idPlayerFormat == user1.getId())
+            
+            for eventStatusItem in try db.prepare(query) {
+                let query2 = eventTable.select(eventTable[*]).filter(idFormat == eventStatusItem[idEventFormat])
+                for eventItem in try db.prepare(query2) {
+                    let event1 = Event(name : eventItem[nameFormat],date :eventItem[dateFormat])
+                    eventList.append(event1)
+                }
+            }
+            
+            
+        }catch{
+            print(error)
+            
+        }
+        return eventList
+        
+    }
     
 }

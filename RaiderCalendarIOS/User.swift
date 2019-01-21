@@ -114,7 +114,7 @@ class User{
     
     func getGroupeList(userToken : String) -> Array<Groupe>{
         let user1 = User()
-        user1.loadByToken(token: Token.token)
+        user1.loadByToken(token: userToken)
         
         var groupList = [Groupe]()
         do{
@@ -132,7 +132,10 @@ class User{
             }
             
             
-        }catch{print(error)}
+        }catch{
+            print(error)
+            
+        }
         
         return groupList
     }

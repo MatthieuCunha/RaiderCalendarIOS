@@ -45,7 +45,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="CreateEvent"/>
                                 <connections>
-                                    <action selector="createEventClick:" destination="KXD-7w-8tA" eventType="touchUpInside" id="kiV-nF-gYA"/>
+                                    <action selector="onClickCreate:" destination="KXD-7w-8tA" eventType="touchUpInside" id="DfW-yg-SNt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,9 +55,9 @@
                     <tabBarItem key="tabBarItem" title="createEvent" id="wFM-TN-B8f"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="createEventClick" destination="9A0-bW-rVD" id="q8G-a9-mN1"/>
                         <outlet property="datePicker" destination="PMF-Ym-UR3" id="fYn-gt-3tC"/>
                         <outlet property="eventName" destination="7XA-8o-CSw" id="zPD-lF-UFq"/>
+                        <outlet property="groupeName" destination="jex-Mo-tws" id="mD0-1V-7lV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Kb-pr-mZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
